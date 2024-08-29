@@ -1,18 +1,18 @@
-
-<table class="table-auto">
+<div class="p-5">
+  <table class="table-fixed border-separate  border border-slate-500 ...">
     <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <td>Link</td>
+      <th class="border border-slate-600 ...">ID</th>
+      <th class="border border-slate-600 ...">Name</th>
+      <th class="border border-slate-600 ...">Email</th>
+      <th class="border border-slate-600 ...">Link</th>
     </tr>
     <tr *ngFor="let contact of contacts">
-        <td>{{ contact.id }}</td>
-        <td>{{ contact.name }}</td>
-        <td>{{ contact.email }}</td>
-        <td>
-            <a [routerLink] = "['/listings', contact.id]">Go to details</a>
-        </td>
+      <td class="border border-slate-700 ...">{{ contact.id }}</td>
+      <td class="border border-slate-700 ...">{{ contact.name }}</td>
+      <td class="border border-slate-700 ...">{{ contact.email }}</td>
+      <td class="border border-slate-700 ...">
+        <a [routerLink]="['/listings', contact.id]">Go to details</a>
+      </td>
     </tr>
-</table>
-
+  </table>
+</div>
